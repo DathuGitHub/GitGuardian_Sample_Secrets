@@ -9,7 +9,7 @@ mypassword="MyPasswords"
 print ('Here is my password: '+str(password))
 jira_api_token='8EV4JKjHr5t4d4eFBv75692JK'
 atlassian_api_='2J8PJKjHr5t4d4eFBv75608IJK'
- 
+key=git@github.com:DathuGitHub/GitGuardian_Sample_Secrets.git
 curl -k $URLPATCH \
 -H 'client_id: 14c2a4g6523b4934fd2458cd1d42179f' \
 -H 'client_secret: 18GbaaB7E1a5448f96F3aE95206b96e4'
