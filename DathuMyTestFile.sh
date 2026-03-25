@@ -1,11 +1,11 @@
-username= 'Test_username'
-password= 'Test_PAssword'
+username= 'Dathu_Test_Username'
+password= 'Dathu_Test_Password'
 test='4FV4TGjHr5t4d4eFBv75645D'
 mypwd= "Dathu_Test_Deloitte_1234"
 my_password= "paastswodrd@1233"
-password="tes456tj"
+password="Test456ab"
 password="MyPassword1234"
-mypassword="mypasswords"
+mypassword="MyPasswords"
 print ('Here is my password: '+str(password))
 jira_api_token='8EV4JKjHr5t4d4eFBv75692JK'
 atlassian_api_='2J8PJKjHr5t4d4eFBv75608IJK'
