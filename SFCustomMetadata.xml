@@ -1,0 +1,653 @@
+<!-- Testing, Learning and Experimentation purposes only. -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata">
+  <label>My Service (TEST)</label>
+  <protected>false</protected>
+
+  <values>
+    <field>EndpointUrl__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">https://api.example.invalid/v1</value>
+  </values>
+
+  <values>
+    <field>Username__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">svc_user_test</value>
+  </values>
+
+  <!-- Secret-like fields often incorrectly stored here (good for scanner tests) -->
+  <values>
+    <field>Password__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">P@ssw0rd-TEST-9f3K!2q</value>
+  </values>
+
+  <values>
+    <field>ApiKey__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">sk-test-0123456789abcdef0123456789abcdef</value>
+  </values>
+
+  <values>
+    <field>ClientId__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">3MVG9_TESTCLIENTID_0123456789abcdef0123456789abcdef012345</value>
+  </values>
+
+  <values>
+    <field>ClientSecret__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">TESTCLIENTSECRET_0123456789abcdef0123456789abcdef</value>
+  </values>
+
+  <values>
+    <field>BearerToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">Bearer test_access_token_XYZ.abc123.DEF456ghi789</value>
+  </values>
+
+  <values>
+    <field>PrivateKeyPem__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">-----BEGIN PRIVATE KEY-----
+VEVTVF9QUklWQVRFX0tFWV9EQVRBX0ZBS0U=
+-----END PRIVATE KEY-----</value>
+  </values>
+
+  <values>
+    <field>GithubToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">ghp_TEST0123456789abcdefghijklmnopqrstuvwxyzABCDE</value>
+  </values>
+
+  <values>
+    <field>GitlabPat__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">glpat-TEST0123456789abcdefghijklmnop</value>
+  </values>
+
+  <values>
+    <field>SlackBotToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">xoxb-123456789012-123456789012-TESTabcdefghijklmnopqrstuvwxyz</value>
+  </values>
+
+  <values>
+    <field>SendgridApiKey__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">SG.TEST0123456789abcdefghijklmnopqrstuvwxyz.ABCDEFGHIJKLMNOPQRSTUV</value>
+  </values>
+
+  <values>
+    <field>StripeSecretKey__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">sk_test_51TEST0123456789abcdefghijklmnopqrstuvwxyzABCDE</value>
+  </values>
+
+  <values>
+    <field>TwilioAuthToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">TEST0123456789abcdef0123456789abcdef</value>
+  </values>
+
+  <values>
+    <field>GoogleApiKey__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">AIzaSyTEST_0123456789abcdefghijklmnopqrstuvwxyz</value>
+  </values>
+
+  <values>
+    <field>FirebaseServerKey__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">AAAA_TEST_firebase_server_key_0123456789abcdef0123456789</value>
+  </values>
+
+  <values>
+    <field>AzureDevopsPat__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">azdpat_TEST0123456789abcdefghijklmnopqrstuvwxyzABCDE</value>
+  </values>
+
+  <values>
+    <field>DatadogApiKey__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">dd_api_key_TEST0123456789abcdef0123456789abcdef</value>
+  </values>
+
+  <values>
+    <field>DatadogAppKey__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">dd_app_key_TEST0123456789abcdef0123456789abcdef0123456789abcdef</value>
+  </values>
+
+  <values>
+    <field>SplunkHecToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">TEST01234567-89ab-cdef-0123-456789abcdef</value>
+  </values>
+
+  <values>
+    <field>MongoDbUri__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">mongodb+srv://test_user:TESTp%40ssw0rd@cluster0.example.invalid/app?retryWrites=true&w=majority</value>
+  </values>
+
+  <values>
+    <field>RedisUri__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">rediss://:TESTredispass@cache.example.invalid:6380/0</value>
+  </values>
+
+  <values>
+    <field>NpmToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">npm_TEST0123456789abcdefghijklmnopqrstuvwxyzABCDE</value>
+  </values>
+
+  <values>
+    <field>PypiToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">pypi-AgENdGVzdC1weXBpLXRva2VuLVRFU1QwMTIzNDU2Nzg5</value>
+  </values>
+
+  <values>
+    <field>DockerConfigAuth__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">{"auths":{"registry.example.invalid":{"auth":"dGVzdF91c2VyOlRFU1RwQHNzdzByZA=="}}}</value>
+  </values>
+
+  <values>
+    <field>TlsCertificatePem__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">-----BEGIN CERTIFICATE-----
+VEVTVF9DRVJUSUZJQ0FURV9EQVRBX0ZBS0U=
+-----END CERTIFICATE-----</value>
+  </values>
+
+  <values>
+    <field>OktaApiToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">00TESTOktaToken_abcdefghijklmnopqrstuvwxyz0123456789</value>
+  </values>
+
+
+  <values>
+    <field>OpenAIApiKey__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">sk-proj-INVALID-OpenAI-0123456789abcdef</value>
+  </values>
+
+  <values>
+    <field>AnthropicApiKey__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">sk-ant-INVALID-0123456789abcdefghijklmnop</value>
+  </values>
+
+  <values>
+    <field>GoogleOAuthClientSecret__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">GOCSPX-INVALID_0123456789abcdefghijklmnopqrstuvwxyz</value>
+  </values>
+
+  <values>
+    <field>CloudflareApiToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">cf_api_token_INVALID_01234G6789ZZZZZZZZZZZZZZZZZZZZZZZZZ</value>
+  </values>
+
+  <values>
+    <field>PagerDutyApiToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">pdus+INVALID+token+with+wrong+format</value>
+  </values>
+
+  <values>
+    <field>NewRelicUserApiKey__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">NRAK-INVALID-0123456789abcdef0123456789abcdef</value>
+  </values>
+
+  <values>
+    <field>LaunchDarklySdkKey__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">sdk-INVALID-0123456789abcdef0123456789abcdef</value>
+  </values>
+
+  <values>
+    <field>LaunchDarklyApiAccessToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">api-INVALID-0123456789abcdef0123456789abcdef</value>
+  </values>
+
+  <values>
+    <field>SegmentWriteKey__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">INVALIDSEGMENTWRITEKEY_0123456789abcdef</value>
+  </values>
+
+  <values>
+    <field>DatabricksPat__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">dapiINVALID0123456789abcdefghijklmnopqrstuvwxyz</value>
+  </values>
+
+  <values>
+    <field>SnowflakePassword__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">SnowflakePass-INVALID-7kL!2mN</value>
+  </values>
+
+  <values>
+    <field>ConfluentCloudApiKey__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">CCAK-INVALID-0123456789ABCDEF</value>
+  </values>
+
+  <values>
+    <field>ConfluentCloudApiSecret__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">CCAS-INVALID-0123456789abcdef0123456789abcdef</value>
+  </values>
+
+  <values>
+    <field>ElasticCloudApiKey__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">ZXM9SU5WQUxJRCx0b28tc2hvcnQ=</value>
+  </values>
+
+  <values>
+    <field>SentryAuthToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">sntrys_XXXXXXXXXXXXXXXXXXXXXXXXXXXXINVALID</value>
+  </values>
+
+  <values>
+    <field>VercelToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">vercel_XXXXXXXXXXXXINVALID_TOO_SHORT</value>
+  </values>
+
+  <values>
+    <field>NetlifyAccessToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">netlify_XXXXXXXXXXXXXXXXXXXXINVALID</value>
+  </values>
+
+  <values>
+    <field>HerokuApiKey__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">INVALID-HEROKU-KEY-00000000-0000-0000-0000-000000000000</value>
+  </values>
+
+  <values>
+    <field>DigitalOceanToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">dop_v1_INVALID0123456789abcdefghijklmnop</value>
+  </values>
+
+  <values>
+    <field>AtlassianApiToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">ATATT3xFfGF0INVALID-not-a-real-token</value>
+  </values>
+
+  <values>
+    <field>ZendeskApiToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">zendesk_INVALID_0123456789abcdef0123456789abcdef</value>
+  </values>
+
+  <values>
+    <field>IntercomAccessToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">intercom_INVALID_0123456789abcdefghijklmnopqrstuvwxyz</value>
+  </values>
+
+  <values>
+    <field>HubSpotPrivateAppToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">pat-na1-INVALID-01234567-89ab-cdef-0123-456789abcdef</value>
+  </values>
+
+  <values>
+    <field>MailchimpApiKey__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">0123456789abcdef0123456789abcdef-us99</value>
+  </values>
+
+  <values>
+    <field>ShopifyAdminToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">shpat_INVALID_0123456789abcdef0123456789abcdef</value>
+  </values>
+
+  <values>
+    <field>ShopifyStorefrontToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">shpat_storefront_INVALID_0123456789abcdef</value>
+  </values>
+
+  <values>
+    <field>GitHubFineGrainedPat__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">github_pat_INVALID_0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789</value>
+  </values>
+
+  <values>
+    <field>CircleCIApiToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">circleci-INVALID-01234567-89ab-cdef-0123-456789abcdef</value>
+  </values>
+
+  <values>
+    <field>TravisCIAuthToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">travisci_invalid_token_0123456789abcdef</value>
+  </values>
+
+  <values>
+    <field>SquareAccessToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">EAAAINVALIDSquareAccessToken_0123456789abcdef</value>
+  </values>
+
+  <values>
+    <field>OktaSSWS__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">SSWS INVALID_okta_token_0123456789</value>
+  </values>
+
+  <!-- AWS -->
+  <values>
+    <field>AwsAccessKeyId_Example__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">AKIAIOSFODNN7EXAMPLE</value>
+  </values>
+
+  <values>
+    <field>AwsSecretAccessKey_Example__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY</value>
+  </values>
+
+  <values>
+    <field>AwsSessionToken_Example__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">FwoGZXIvYXdzEP//////////wEaDOLr0p7EXAMPLEr8bK2iK3QKpEXAMPLE</value>
+  </values>
+
+  <values>
+    <field>AwsArn_Example__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">arn:aws:iam::123456789012:role/ExampleRole</value>
+  </values>
+
+  <!-- Azure -->
+  <values>
+    <field>AzureStorageConnectionString_Example__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">DefaultEndpointsProtocol=https;AccountName=examplestorage;AccountKey=Eby8vdM02xNOcqFeqCnxEXAMPLE==;EndpointSuffix=core.windows.net</value>
+  </values>
+
+  <values>
+    <field>AzureStorageSasToken_Example__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">sv=2023-11-03&ss=b&srt=sco&sp=rwlac&se=2099-12-31T23:59:59Z&st=2020-01-01T00:00:00Z&spr=https&sig=EXAMPLE%2FNOT%2FA%2FREAL%2FSIGNATURE%3D</value>
+  </values>
+
+  <values>
+    <field>AzureCosmosPrimaryKey_Example__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">C2FybXBsZUNvc21vc0tleUVYQU1QTEU9PQ==</value>
+  </values>
+
+  <!-- Google Cloud (GCP) -->
+  <values>
+    <field>GcpServiceAccountJson_Example__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">{"type":"service_account","project_id":"example-project","private_key_id":"EXAMPLEPRIVATEKEYID0123456789","private_key":"-----BEGIN PRIVATE KEY-----\nVEVTVF9HQ1BfU0FfUFJJVkFURV9LRVk=\n-----END PRIVATE KEY-----\n","client_email":"example-sa@example-project.iam.gserviceaccount.com","client_id":"123456789012345678901","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token"}</value>
+  </values>
+
+  <values>
+    <field>GcpOauthAccessToken_Example__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">ya29.a0ARrdaM-EXAMPLE-THIS-IS-NOT-VALID</value>
+  </values>
+
+  <!-- Oracle Cloud Infrastructure (OCI) -->
+  <values>
+    <field>OciTenancyOcid_Example__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">ocid1.tenancy.oc1..aaaaaaaaexampleuniqueid1234567890</value>
+  </values>
+
+  <values>
+    <field>OciUserOcid_Example__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">ocid1.user.oc1..aaaaaaaaexampleuniqueid1234567890</value>
+  </values>
+
+  <values>
+    <field>OciApiKeyFingerprint_Example__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">aa:bb:cc:dd:ee:ff:00:11:22:33:44:55:66:77:88:99</value>
+  </values>
+
+  <values>
+    <field>OciApiPrivateKeyPem_Example__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">-----BEGIN RSA PRIVATE KEY-----
+VEVTVF9PQ0lfUlNBX1BSSVZBVEVfS0VZX0RBVEE=
+-----END RSA PRIVATE KEY-----</value>
+  </values>
+
+  <!-- Alibaba Cloud -->
+  <values>
+    <field>AlibabaCloudAccessKeyId_Example__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">LTAI4F8EXAMPLE1234567890</value>
+  </values>
+
+  <values>
+    <field>AlibabaCloudAccessKeySecret_Example__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">EXAMPLEalibabaSecretKey0123456789abcdEFGH</value>
+  </values>
+
+  <!-- Tencent Cloud -->
+  <values>
+    <field>TencentCloudSecretId_Example__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">AKIDEXAMPLE1234567890ABCDEFGH</value>
+  </values>
+
+  <values>
+    <field>TencentCloudSecretKey_Example__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">EXAMPLETencentSecretKey0123456789abcdef012345</value>
+  </values>
+
+  <!-- IBM Cloud -->
+  <values>
+    <field>IbmCloudIamApiKey_Example__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">ibmcloud-iam-apikey-EXAMPLE-0123456789abcdefghijklmnopqrstuvwxyz</value>
+  </values>
+
+  
+  <!-- Zoom (placeholders; intentionally non-real formats) -->
+  <values>
+    <field>ZoomServerToServerOAuthClientId__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">ZOOM-CLIENT-ID-INVALID-EXAMPLE-000000</value>
+  </values>
+
+  <values>
+    <field>ZoomServerToServerOAuthClientSecret__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">ZOOM-CLIENT-SECRET-INVALID-EXAMPLE-DO-NOT-USE</value>
+  </values>
+
+  <values>
+    <field>ZoomOAuthAccessToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">zoom_access_token_INVALID_EXAMPLE_aaaaaaaaaaaa</value>
+  </values>
+
+  <values>
+    <field>ZoomWebhookSecret__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">zoom_webhook_secret_INVALID_EXAMPLE_bbbbbbbbbbbb</value>
+  </values>
+
+  <!-- Box (placeholders; intentionally non-real formats) -->
+  <values>
+    <field>BoxDeveloperToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">box_developer_token_INVALID_EXAMPLE_cccccccccccc</value>
+  </values>
+
+  <values>
+    <field>BoxClientId__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">box_client_id_INVALID_EXAMPLE_111111</value>
+  </values>
+
+  <values>
+    <field>BoxClientSecret__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">box_client_secret_INVALID_EXAMPLE_DO_NOT_USE</value>
+  </values>
+
+  <values>
+    <field>BoxJwtPrivateKeyPem__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">-----BEGIN PRIVATE KEY-----
+VEVTVF9CT1hfSldUX1BSSVZBVEVfS0VZX0lOVkFMSUQ=
+-----END PRIVATE KEY-----</value>
+  </values>
+
+  <!-- Miro (placeholders; intentionally non-real formats) -->
+  <values>
+    <field>MiroAccessToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">miro_access_token_INVALID_EXAMPLE_dddddddddddd</value>
+  </values>
+
+  <values>
+    <field>MiroRefreshToken__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">miro_refresh_token_INVALID_EXAMPLE_eeeeeeeeeeee</value>
+  </values>
+
+  <values>
+    <field>MiroClientId__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">miro_client_id_INVALID_EXAMPLE_222222</value>
+  </values>
+
+  <values>
+    <field>MiroClientSecret__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">miro_client_secret_INVALID_EXAMPLE_DO_NOT_USE</value>
+  </values>
+
+  <values>
+    <field>MiroWebhookSecret__c</field>
+    <value xsi:type="xsd:string"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema">miro_webhook_secret_INVALID_EXAMPLE_ffffffffffff</value>
+  </values>
+
+  
+</CustomMetadata>
