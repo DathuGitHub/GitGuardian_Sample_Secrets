@@ -1,0 +1,145 @@
+# TESTING purposes only.
+#!/usr/bin/env sh
+# Synthetic secret-like values for secret-scanner testing ONLY.
+
+# Basic creds
+username='svc_appuser_test'
+user='appuser_test'
+login='login_test_user'
+password='P@ssw0rd-TEST-9f3K!2q'
+pass='pass_TEST_4mQ!8'
+passwd='Passwd_TEST_7kL!3mN2'
+pwd='pwdTEST_8xQ#1z'
+root_password='Root-TEST-DoNotUse-4pR!9'
+admin_password='Admin#TEST#2026!xY7'
+service_account_password='SvcAcct-TEST-2zN!8pQ'
+
+# Generic keys/secrets
+api_key='test_api_key_7Gk2v9Qm4Pz8N1s6R0t3'
+apikey='TESTKEY_2f1c9a77b3d24e4aa8b0c1d2e3f4a5b6'
+apiKey='TestApiKey_0a1b2c3d4e5f6g7h8i9j'
+access_key='test_access_key_k3Y9v1Q8p2'
+secret_key='test_secret_key_9d2e1f7c4b'
+app_key='app_key_TEST_1234abcd5678'
+private_key='privkey_TEST_3a9c2e1f'
+public_key='pubkey_TEST_6d1b7c2a'  # often not secret, but scanners may still flag
+signing_key='sign_TEST_98af21d3c4b5'
+webhook_secret='whsec_test_3f9c2a1b7d8e6f5a4c3b2a1d'
+shared_secret='shared_secret_TEST_1f2e3d4c'
+secret='secret_TEST_7b2c9d1e'
+token='token_TEST_9c2b1a7d'
+
+# OAuth / OIDC / SSO
+client_id='test-client-id-3b2c1a90'
+client_secret='test_client_secret_V3ryS3cr3t_7c9d2e1f'
+oauth_client_id='oauth-client-id-test-7f2a'
+oauth_client_secret='oauth_secret_TEST_1a2b3c4d5e'
+oidc_client_id='oidc-client-id-test-19c4'
+oidc_client_secret='oidc_secret_TEST_6f5e4d3c2b'
+saml_private_key='saml_priv_TEST_4d3c2b1a'
+saml_cert='-----BEGIN CERTIFICATE-----\nVEVTVF9DRVJUX0ZBS0U=\n-----END CERTIFICATE-----'
+
+# Auth headers / sessions
+Authorization='Bearer test_access_token_XYZ.abc123.DEF456ghi789'
+authorization='Basic dGVzdDp0ZXN0' # base64("test:test") for pattern testing
+access_token='test_access_token_XYZ.abc123.DEF456ghi789'
+refresh_token='test_refresh_token_0b7d9f2c1a3e5d8f7a6b'
+bearer_token='Bearer_testtoken_7f3c2a19b8d0'
+id_token='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJURVNUIiwic3ViIjoidXNlci10ZXN0IiwiaWF0IjoxNzAwMDAwMDB9.dGVzdF9zaWduYXR1cmVfZmFrZQ'
+jwt='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0In0.dGVzdA'
+session_token='sessTok_TEST_6f1d2c3b4a5e6d7c'
+sessionid='sess_TEST_6f1d2c3b4a5e6d7c8b9a0f'
+cookie='sid=sess_TEST_6f1d2c3b4a5e6d7c8b9a0f; path=/; HttpOnly'
+csrf_token='csrf_TEST_2a1b9c8d7e6f'
+
+# Cloud: AWS
+aws_access_key_id='AKIATEST1234567890AB'
+aws_secret_access_key='testSecretAccessKey1234567890abcdEFGHijklMNOP'
+aws_session_token='testAwsSessionToken_eyJfVEVTVF8xMjM0NTY3ODkwX2FiYw'
+
+# Cloud: Azure / Entra
+azure_client_secret='test-azure-secret-3~Q8mN2pL7kR5vT1xZ9aBcDeF'
+tenant_id='00000000-1111-2222-3333-444444444444'
+subscription_id='11111111-2222-3333-4444-555555555555'
+
+# Cloud: GCP
+google_application_credentials='/tmp/FAKE_gcp_sa_key.json'  # path can still be sensitive
+gcp_service_account_key='{"type":"service_account","project_id":"test-proj","private_key_id":"testkeyid_4c2a1f9e8d7b6c5a3e2f1a0b","private_key":"-----BEGIN PRIVATE KEY-----\\nVEVTVF9QUklWQVRFX0tFWV9EQVRBX0ZBS0U=\\n-----END PRIVATE KEY-----\\n","client_email":"test-sa@test-proj.iam.gserviceaccount.com"}'
+gcp_service_account_private_key_id='testkeyid_4c2a1f9e8d7b6c5a3e2f1a0b'
+gcp_service_account_private_key='-----BEGIN PRIVATE KEY-----\nVEVTVF9QUklWQVRFX0tFWV9EQVRBX0ZBS0U=\n-----END PRIVATE KEY-----'
+
+# Databases (users/passwords + common env vars)
+db_user='app_db_user_test'
+db_password='DbPass-TEST-4mQ!8zN#1'
+database_url='postgres://app_db_user_test:DbPass-TEST-4mQ!8zN#1@db01:5432/appdb'
+DATABASE_URL='postgres://app_db_user_test:DbPass-TEST-4mQ!8zN#1@db01:5432/appdb'
+jdbc_url='jdbc:postgresql://db01:5432/appdb?user=app_db_user_test&password=DbPass-TEST-4mQ!8zN#1'
+connection_string='Server=db01;Database=appdb;User Id=app_db_user_test;Password=DbPass-TEST-4mQ!8zN#1;'
+mongodb_uri='mongodb://app_db_user_test:DbPass-TEST-4mQ!8zN#1@db01:27017/appdb'
+postgres_url='postgres://app_db_user_test:DbPass-TEST-4mQ!8zN#1@db01:5432/appdb'
+mysql_password='MySQL-TEST-9aB!2cD'
+MYSQL_PWD='MySQL-TEST-9aB!2cD'
+PGPASSWORD='Pg-TEST-7xQ!1zN'
+redis_password='Redis-TEST-2pL!8mK'
+RABBITMQ_PASSWORD='Rabbit-TEST-6nM!2qR'
+kafka_sasl_password='Kafka-TEST-3vT!9bC'
+ELASTICSEARCH_PASSWORD='Elastic-TEST-4dE!7fG'
+OPENSEARCH_PASSWORD='OpenSearch-TEST-8hI!1jK'
+
+# SSH / TLS / cert material (stringified)
+ssh_private_key='-----BEGIN OPENSSH PRIVATE KEY-----\nVEVTVF9PU0hfcHJpdmF0ZV9rZXlfZmFrZQ==\n-----END OPENSSH PRIVATE KEY-----'
+deploy_key='-----BEGIN OPENSSH PRIVATE KEY-----\nREVQTE9ZX0tFWV9GQUtF\n-----END OPENSSH PRIVATE KEY-----'
+ssh_passphrase='SshPassphrase-TEST-5cD!9eF'
+tls_key='-----BEGIN RSA PRIVATE KEY-----\nVEVTVF9SU0FfcHJpdmF0ZV9rZXlfZmFrZQ==\n-----END RSA PRIVATE KEY-----'
+tls_private_key='-----BEGIN RSA PRIVATE KEY-----\nVEVTVF9SU0FfcHJpdmF0ZV9rZXlfZmFrZQ==\n-----END RSA PRIVATE KEY-----'
+private_key_pem='-----BEGIN PRIVATE KEY-----\nVEVTVF9QUklWQVRFX0tFWV9GQUtF\n-----END PRIVATE KEY-----'
+keystore_password='Keystore-TEST-3mN!7pQ'
+pfx_password='PFX-TEST-pass_7vK#3qL!'
+
+# Payments / finance
+stripe_secret_key='sk_test_TEST_51Hh0xXxXxXxXxXxXxXxXxXxXxX'
+payment_gateway_key='pay_test_key_4f2a9c1d7e'
+merchant_id='mrc_TEST_0011223344'
+
+# Email / SMS / comms
+smtp_username='smtp_user_test'
+smtp_password='SmtpP@ss-TEST-2nR!5x'
+smtp_api_key='smtp_api_key_TEST_8b7c6d5e'
+twilio_auth_token='twilio_auth_test_1a2b3c4d5e6f7a8b9c0d'
+sendgrid_api_key='SG.TEST_sendgrid_key_abcdefghijklmnopqrstuvwxyz123456'
+mailgun_api_key='key-TEST-mailgun-0123456789abcdef'
+
+# CI/CD + source control + package registries
+github_token='ghp_TEST_1234567890abcdefghijklmnopqrstuvwxyzAB'
+gitlab_token='glpat-TEST-1a2B3c4D5e6F7g8H9i'
+cicd_token='cicd_TEST_7e6d5c4b3a2f'
+runner_token='RUNNER-TOKEN-TEST-8c7b6a5d4e3f2a1b'
+npm_token='npm_TEST_abcdefghijklmnopqrstuvwxyz0123456789'
+pypi_token='pypi-TEST-0123456789abcdef'
+docker_password='DockerPass-TEST-1qW!2eR'
+
+# Monitoring / logging / ops
+datadog_api_key='dd_test_api_key_1234567890abcdef1234567890abcdef'
+splunk_token='SplunkTEST-11111111-2222-3333-4444-555555555555'
+sentry_dsn='https://publicTEST:secretTEST@sentry.example.invalid/123'
+pagerduty_token='pd_test_token_4c2a1f9e8d7b'
+new_relic_license_key='nrlic_TEST_0123456789abcdef0123456789abcdef'
+honeycomb_api_key='hc_test_0123456789abcdef0123456789ab'
+sumologic_access_id='sumo_test_access_id_01234567'
+sumologic_access_key='sumo_test_access_key_89abcdef01234567'
+
+# Collaboration / IdP / SaaS
+slack_bot_token='xoxb-TEST-1234567890-1234567890-abcdefghijklmnopqrstuvwxyz'
+slack_signing_secret='slack_signing_secret_TEST_0123456789abcdef0123456789abcdef'
+okta_api_token='00TESTOktaToken1234567890abcdefABCDEF'
+atlassian_api_token='atlassian_test_token_abcdef0123456789'
+jira_api_token='jira_test_token_0123456789abcdef'
+confluence_api_token='conf_test_token_abcdef0123456789'
+
+# Encryption / crypto material
+encryption_key='9f2c1a0b3d4e5f67890123456789abcdeffedcba9876543210fedcba01234567'
+encryption_key_hex='9f2c1a0b3d4e5f67890123456789abcdeffedcba9876543210fedcba01234567'
+master_key='master_key_TEST_0123456789abcdef0123456789abcdef'
+kms_key_id='arn:aws:kms:us-east-1:111111111111:key/11111111-2222-3333-4444-555555555555'
+hmac_key='dGVzdF9obWFjX2tleV9ub3RfcmVhbF8xMjM0NTY3ODkw'
+salt='salt_TEST_8f7e6d5c4b3a2910'  # sometimes non-secret; policy-dependent
