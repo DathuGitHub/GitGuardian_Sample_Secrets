@@ -143,3 +143,76 @@ master_key='master_key_TEST_0123456789abcdef0123456789abcdef'
 kms_key_id='arn:aws:kms:us-east-1:111111111111:key/11111111-2222-3333-4444-555555555555'
 hmac_key='dGVzdF9obWFjX2tleV9ub3RfcmVhbF8xMjM0NTY3ODkw'
 salt='salt_TEST_8f7e6d5c4b3a2910'  # sometimes non-secret; policy-dependent
+
+
+# Additional vendor-specific token/key patterns (synthetic)
+
+# Cloudflare / edge
+cloudflare_api_token='cf_test_token_0123456789abcdef0123456789abcdef'
+cloudflare_global_api_key='cf_global_test_abcdef0123456789abcdef0123456789'
+cloudflare_turnstile_secret='1x0000000000000000000000000000000TEST'
+
+# CDN / WAF
+fastly_api_token='fastly_test_0123456789abcdef0123456789abcdef'
+
+# DigitalOcean / Docker Hub
+digitalocean_token='dop_v1_test_0123456789abcdef0123456789abcdef0123456789abcdef'
+docker_pat='dckr_pat_TEST_0123456789abcdefghijklmnopqrstuvwxyzABCDE'
+
+# Shopify
+shopify_access_token='shpat_TEST_0123456789abcdef0123456789abcdef'
+shopify_storefront_token='shpss_TEST_0123456789abcdef0123456789abcdef'
+
+# Dropbox
+dropbox_access_token='sl.TEST_dropbox_token_abcdefghijklmnopqrstuvwxyz0123456789'
+
+# Mapbox
+mapbox_public_token='pk.eyJ1IjoidGVzdCIsImEiOiJja3Rlc3QifQ.TEST_MAPBOX_PUBLIC'
+mapbox_secret_token='sk.eyJ1IjoidGVzdCIsImEiOiJja3Rlc3QifQ.TEST_MAPBOX_SECRET'
+
+# Google / Firebase
+google_api_key='AIzaSyTEST_1234567890abcdefghijklmnopqrstuv'
+firebase_server_key='AAAA_TEST_firebase_server_key:APA91bTESTabcdefghijklmnopqrstuvwxyz0123456789'
+
+# Mailchimp
+mailchimp_api_key='0123456789abcdef0123456789abcdef-us19'
+
+# Databricks / Snowflake
+databricks_pat='dapiTEST0123456789abcdef0123456789abcdef'
+snowflake_password='Snowflake-TEST-6nM!2qR'
+snowflake_oauth_token='snowflake_oauth_TEST_0123456789abcdef0123456789'
+
+# HashiCorp / IaC
+terraform_cloud_token='tfc.TEST_0123456789abcdef0123456789abcdef'
+vault_token='hvs.TEST_0123456789abcdef0123456789abcdef'
+
+# Azure Storage (key + SAS)
+azure_storage_account_key='uLZpQm9uZVN5bnRoZXRpY0Jhc2U2NEtleVRFU1QxMjM0NTY3ODkwPQ=='
+azure_storage_sas='sv=2023-01-03&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2099-12-31T23:59:59Z&st=2020-01-01T00:00:00Z&spr=https&sig=TEST_SIGNATURE_0123456789abcdef'
+
+# CI/CD vendors
+circleci_token='circleci_test_0123456789abcdef0123456789abcdef'
+travis_api_token='travis_test_0123456789abcdef0123456789abcdef'
+netlify_auth_token='netlify_test_0123456789abcdef0123456789abcdef'
+vercel_token='vercel_test_0123456789abcdef0123456789abcdef'
+
+# Observability / code quality
+sonarqube_token='sqp_TEST_0123456789abcdef0123456789abcdef'
+grafana_api_key='glsa_TEST_0123456789abcdef0123456789abcdef'
+
+# CRM / ITSM / support
+servicenow_password='SN-TEST-4dE!7fG'
+salesforce_security_token='SFSEC-TEST-0123456789ABCDEF'
+hubspot_private_app_token='pat-na1-TEST-0123456789abcdef012345'
+zendesk_api_token='zd_test_0123456789abcdef0123456789abcdef'
+
+# Collaboration / chat apps
+discord_bot_token='mfa.TEST_discord_token_abcdefghijklmnopqrstuvwxyz0123456789'
+telegram_bot_token='123456789:AAE_TEST_telegram_token_abcdefghijklmnopqrstuvwxyz'
+
+# AI/ML vendors
+openai_api_key='sk-test-0123456789abcdef0123456789abcdef'
+anthropic_api_key='sk-ant-test-0123456789abcdef0123456789abcdef'
+cohere_api_key='cohere_test_0123456789abcdef0123456789abcdef'
+huggingface_token='hf_TEST_abcdefghijklmnopqrstuvwxyz0123456789ABCDE'
+pinecone_api_key='pcsk_test_0123456789abcdef0123456789abcdef'
