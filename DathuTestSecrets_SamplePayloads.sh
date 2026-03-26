@@ -216,3 +216,52 @@ anthropic_api_key='sk-ant-test-0123456789abcdef0123456789abcdef'
 cohere_api_key='cohere_test_0123456789abcdef0123456789abcdef'
 huggingface_token='hf_TEST_abcdefghijklmnopqrstuvwxyz0123456789ABCDE'
 pinecone_api_key='pcsk_test_0123456789abcdef0123456789abcdef'
+
+#!/usr/bin/env sh
+
+# PostgreSQL (URI + JDBC)
+postgres_uri='postgresql://<USER>:<PASSWORD>@db.example.invalid:5432/<DB>?sslmode=require'
+postgres_jdbc='jdbc:postgresql://db.example.invalid:5432/<DB>?user=<USER>&password=<PASSWORD>&ssl=true'
+
+# MySQL / MariaDB (URI + JDBC)
+mysql_uri='mysql://<USER>:<PASSWORD>@db.example.invalid:3306/<DB>?sslMode=REQUIRED'
+mysql_jdbc='jdbc:mysql://db.example.invalid:3306/<DB>?user=<USER>&password=<PASSWORD>&useSSL=true&requireSSL=true'
+mariadb_jdbc='jdbc:mariadb://db.example.invalid:3306/<DB>?user=<USER>&password=<PASSWORD>&useSsl=true'
+
+# Microsoft SQL Server (ADO + JDBC)
+mssql_ado='Server=tcp:sql.example.invalid,1433;Database=<DB>;User ID=<USER>;Password=<PASSWORD>;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+mssql_jdbc='jdbc:sqlserver://sql.example.invalid:1433;databaseName=<DB>;user=<USER>;password=<PASSWORD>;encrypt=true;trustServerCertificate=false;loginTimeout=30;'
+
+# Oracle (EZCONNECT + JDBC)
+oracle_ezconnect='<USER>/<PASSWORD>@//oracle.example.invalid:1521/<SERVICE_NAME>'
+oracle_jdbc='jdbc:oracle:thin:<USER>/<PASSWORD>@//oracle.example.invalid:1521/<SERVICE_NAME>'
+
+# MongoDB (standard + SRV)
+mongodb_uri='mongodb://<USER>:<PASSWORD>@mongo.example.invalid:27017/<DB>?authSource=admin&tls=true'
+mongodb_srv='mongodb+srv://<USER>:<PASSWORD>@cluster0.example.invalid/<DB>?retryWrites=true&w=majority'
+
+# Redis (standalone + TLS)
+redis_uri='redis://:<PASSWORD>@redis.example.invalid:6379/0'
+rediss_uri='rediss://:<PASSWORD>@redis.example.invalid:6380/0'
+
+# Cassandra / Scylla (DataStax-style)
+cassandra_contact_points='cassandra.example.invalid:9042'
+cassandra_username='<USER>'
+cassandra_password='<PASSWORD>'
+
+# SQLite (file path)
+sqlite_path='sqlite:////tmp/<DB>.sqlite'
+sqlite_jdbc='jdbc:sqlite:/tmp/<DB>.sqlite'
+
+# IBM Db2
+db2_jdbc='jdbc:db2://db2.example.invalid:50000/<DB>:user=<USER>;password=<PASSWORD>;sslConnection=true;'
+
+# SAP HANA
+hana_jdbc='jdbc:sap://hana.example.invalid:30015/?user=<USER>&password=<PASSWORD>&encrypt=true'
+
+# Snowflake
+snowflake_jdbc='jdbc:snowflake://<ACCOUNT>.snowflakecomputing.example.invalid/?user=<USER>&password=<PASSWORD>&db=<DB>&schema=<SCHEMA>&warehouse=<WH>&role=<ROLE>'
+
+# Elasticsearch / OpenSearch (with basic auth)
+elasticsearch_url='https://<USER>:<PASSWORD>@es.example.invalid:9200'
+opensearch_url='https://<USER>:<PASSWORD>@os.example.invalid:9200'
